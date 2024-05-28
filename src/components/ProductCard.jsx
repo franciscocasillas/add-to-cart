@@ -3,7 +3,7 @@ function ProductCard({ name, price, onAddToCart }) {
 		<div>
 			<h2>{name}</h2>
 			<p>Price: ${price}</p>
-			<button onClick={onAddToCart}>Buy Now</button>
+			<button onClick={() => onAddToCart(name, price)}>Buy Now</button>
 		</div>
 	);
 }
